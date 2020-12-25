@@ -22,6 +22,20 @@ class App extends React.Component {
     }
   }
 
+  static navigationOptions = ({ navigation }) => {
+
+    return {
+
+      headerTitle: () =>
+        <View style={{ padding: 0, flex: 1, justifyContent: 'center', margin: 0, height: 50 }}>
+          <Text style={{ fontSize: 20, color: 'black', fontWeight: "bold", textAlign: 'center' }}>
+            React Native SeriesApp
+          </Text>
+        </View>
+    }
+
+  }
+
   componentDidMount() {
 
     return fetch(baseUrl + 'api/most-popular/')
