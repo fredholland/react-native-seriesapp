@@ -86,6 +86,56 @@ class App extends React.Component {
 
 const styles = StyleSheet.create({
 
+  imageserie: {
+    width: width / 3,
+    height: width / 3,
+    resizeMode: 'cover',
+    borderRadius: 5
+  },
+  divseries: {
+    width: width - 10,
+    backgroundColor: '#1a1d29',
+    margin: 5,
+    flexDirection: 'row',
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: '#434550'
+  },
+  shadows: {
+    elevation: 4,
+    shadowOpacity: 0.3,
+    shadowRadius: 50,
+    shadowColor: 'black',
+    shadowOffset: { height: 0, width: 0 },
+  },
+  textName: {
+    width: ((width / 3) * 2) - 20,
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "white"
+  },
+  textNetwork: {
+    color: "red",
+    fontSize: 22
+  },
+  textStatus: {
+    fontSize: 18,
+    color: 'white'
+  },
+  headerseries: {
+    width: width,
+    height: 50,
+    backgroundColor: "#c2191c",
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: "bold"
+  },
+  logoseries: {
+    height: 45,
+    width: width / 3,
+    resizeMode: 'contain'
+  }
+
 });
 
 export default App;
